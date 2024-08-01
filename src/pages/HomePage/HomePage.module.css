@@ -1,0 +1,7 @@
+.home_page {
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    background: url('../../assets/images/bg4.jpg');
+    font-family: monospace;
+}

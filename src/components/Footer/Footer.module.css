@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #FFFDD0, #7EEAFF, #FFC8C9);
+}
+
+.footer > p {
+  color: #3c3a3a;
+  font-size: small;
+  font-family: monospace;
+}

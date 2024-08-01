@@ -1,0 +1,24 @@
+.main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.main > a {
+    padding: 5px;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #7e1b02, #be6e31, #91176f, #6c05fd);
+    display: inline-block;
+    text-decoration: none;
+}
+
+.main > a:hover {
+    color: transparent;
+    background-image: linear-gradient(to right, #ff5f6f, #fe7bb6, #fae64c, #05fd2a);
+    display: inline-block;
+}
