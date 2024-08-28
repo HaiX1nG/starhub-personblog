@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
@@ -31,6 +31,7 @@ const UserManagement = () => {
   const navigate = useNavigate()
   const [collapsed, setCollapsed] = useState(false)
   const [display, setDisplay] = useState('block')
+  const [opacity, setOpacity] = useState(1)
 
   const handleTimeUpdate = (newTime: string) => {
     const time: number = parseInt(newTime[0])
@@ -74,6 +75,7 @@ const UserManagement = () => {
   const toggleCollapsed = () => {
     const nextCollapsed = !collapsed
     setCollapsed(nextCollapsed)
+    setOpacity(nextCollapsed ? 0 : 1)
     setDisplay(nextCollapsed ? 'none' : 'block')
   }
 
@@ -88,7 +90,7 @@ const UserManagement = () => {
           theme='dark'
         >
           <div className="demo-logo-vertical">
-            <Logo width='40px' height='40px' color='#fff' fontSize='35px' display={display} />
+            <Logo width='40px' height='40px' color='#fff' fontSize='35px' display={display} opacity={opacity} />
           </div>
           <Menu
             theme="dark"

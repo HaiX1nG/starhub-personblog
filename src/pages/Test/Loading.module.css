@@ -1,19 +1,13 @@
 .main {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content {
   width: 200px;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(130, 121, 121, 0.3);
   border-radius: 5px;
+  box-shadow: 0 0 15px rgba(31, 29, 29, 0.3);
 }
 
 .loading {
@@ -23,30 +17,16 @@
 }
 
 .item {
-  width: 12px;
-  height: 60px;
+  width: 15px;
+  height: 45px;
   border-radius: 3px;
   margin: 0 5px;
-  animation: wave 1s infinite ease-in-out;
-}
-
-.item_font {
-  font-size: 25px;
-  animation: font 1.2s infinite ease-in-out;
+  animation: wave 1.2s infinite ease-in-out;
 }
 
 @keyframes wave {
   0%, 40%, 100% {
     transform: scale(0.4);
-  }
-  20% {
-    transform: scale(1);
-  }
-}
-
-@keyframes font {
-  0%, 40%, 100% {
-    transform: scale(0.6);
   }
   20% {
     transform: scale(1);

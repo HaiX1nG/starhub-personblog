@@ -12,7 +12,7 @@ const TopNav = () => {
     <div>
       <div className={style.top_nav}>
         <div className={style.logo}>
-          <Logo width='90px' height='90px' color='#000000' fontSize='45px' display='block' />
+          <Logo width='90px' height='90px' color='#000000' fontSize='45px' display='block' opacity={1} />
         </div>
         <div className={style.search}>
           <Search />

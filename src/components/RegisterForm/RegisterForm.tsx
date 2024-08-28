@@ -4,10 +4,12 @@ import female from '../../assets/female.svg'
 import { LockOutlined, UserOutlined, MailOutlined, PhoneOutlined } from '@ant-design/icons'
 import { Form, Input, Button, Select } from 'antd'
 import style from './RegisterForm.module.css'
+import { useForm } from 'antd/es/form/Form'
 
 const { Option } = Select
 
 const RegisterForm = () => {
+
   const onFinish = (value: any) => {
     console.log('Received values of form: ', value)
   }
@@ -105,9 +107,8 @@ const RegisterForm = () => {
             </Select>
           </Form.Item>
           <Form.Item>
-            <Button type='primary' htmlType='submit' block>
-              注册
-            </Button>
+            {/* <button type="submit" className={style.register_form_button}>注&nbsp;册</button> */}
+            <div className={style.register_form_button} onClick={() => form.submit()}>注&nbsp;册</div>
           </Form.Item>
         </Form>
       </div>
